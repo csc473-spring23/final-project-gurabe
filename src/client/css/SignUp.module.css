@@ -1,0 +1,47 @@
+.main {
+    /* https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 80%;
+    background-color: gray;
+    border-radius: 25px;
+    box-shadow: 0px 0px 4px 0px black;
+}
+
+.main h1,
+.main h2 {
+    text-align: center;
+}
+
+.form {
+    display: block;
+}
+
+.form-item > p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.form-item {
+    margin: 20px;
+}
+
+.form-submit {
+    width: 100%;
+}
+
+.my-btn {
+    background-color: #aeb7b3;
+}
+
+.form-input {
+    width: 100%;
+}

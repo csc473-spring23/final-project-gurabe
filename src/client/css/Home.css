@@ -1,0 +1,40 @@
+body {
+    background-color: #e1efe6;
+}
+
+.navbar {
+    height: fit-content;
+    background-color: #efcb68;
+}
+.navbar * {
+    max-height: 100px;
+}
+
+#home-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+
+#pfp {
+    border-radius: 50%;
+    height: 75px;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.row {
+    height: 250px;
+}
+
+.movie {
+    background-color: #aeb7b3;
+    transform: scale(0.9);
+}
+
+.btn {
+    background-color: #aeb7b3;
+}
