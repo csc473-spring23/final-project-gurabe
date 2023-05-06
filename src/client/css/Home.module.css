@@ -1,12 +1,8 @@
-body {
-    background-color: #e1efe6;
-}
-
-.navbar {
+.my-navbar {
     height: fit-content;
     background-color: #efcb68;
 }
-.navbar * {
+.my-navbar * {
     max-height: 100px;
 }
 
@@ -20,21 +16,29 @@ body {
 #pfp {
     border-radius: 50%;
     height: 75px;
+    transition: 0.25s;
+}
+#pfp:hover {
+    transform: scale(0.9);
 }
 
-.container {
+.my-container {
     margin-top: 15px;
 }
 
-.row {
+.my-row {
     height: 250px;
 }
 
 .movie {
     background-color: #aeb7b3;
     transform: scale(0.9);
+    transition: 0.25s;
+}
+.movie:hover {
+    transform: scale(0.8);
 }
 
-.btn {
+.my-btn {
     background-color: #aeb7b3;
 }

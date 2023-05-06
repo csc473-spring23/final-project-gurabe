@@ -11,9 +11,8 @@
 
     width: 60%;
     height: 80%;
-    background-color: gray;
+    background-color: #efcb68;
     border-radius: 25px;
-    box-shadow: 0px 0px 4px 0px black;
 }
 
 .form-item > p {

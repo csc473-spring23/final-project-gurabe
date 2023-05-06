@@ -1,14 +1,13 @@
-import "../css/Home.css";
+import styles from "../css/Home.module.css";
 
 export default function Home() {
     return (
         <>
-            <nav className="navbar sticky-top semi-dark-cont">
+            <nav className={`navbar sticky-top ${styles["my-navbar"]}`}>
                 <div className="container-fluid">
                     <a
-                        id="home-link"
+                        id={`${styles["home-link"]}`}
                         href="/"
-                        className="nav-text home"
                     >
                         CinemaShare
                     </a>
@@ -23,7 +22,7 @@ export default function Home() {
                             aria-label="Search"
                         />
                         <button
-                            className="btn"
+                            className={`btn ${styles["my-btn"]}`}
                             type="submit"
                         >
                             Search
@@ -32,23 +31,55 @@ export default function Home() {
 
                     <a href="/account">
                         <img
-                            id="pfp"
+                            id={`${styles["pfp"]}`}
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Checkerboard_pattern.svg/360px-Checkerboard_pattern.svg.png"
                         />
                     </a>
                 </div>
             </nav>
 
-            <div className="container">
-                <div className="row">
-                    <div className="col-4 movie"></div>
-                    <div className="col-4 movie"></div>
-                    <div className="col-4 movie"></div>
+            <div className={`container ${styles["my-container"]}`}>
+                <div className={`row ${styles["my-row"]}`}>
+                    <a
+                        className={`col-4 ${styles["movie"]}`}
+                        href="/movie-info"
+                    ></a>
+                    <a
+                        className={`col-4 ${styles["movie"]}`}
+                        href="/movie-info"
+                    ></a>
+                    <a
+                        className={`col-4 ${styles["movie"]}`}
+                        href="/movie-info"
+                    ></a>
                 </div>
-                <div className="row">
-                    <div className="col-4 movie"></div>
-                    <div className="col-4 movie"></div>
-                    <div className="col-4 movie"></div>
+                <div className={`row ${styles["my-row"]}`}>
+                    <a
+                        className={`col-4 ${styles["movie"]}`}
+                        href="/movie-info"
+                    ></a>
+                    <a
+                        className={`col-4 ${styles["movie"]}`}
+                        href="/movie-info"
+                    ></a>
+                    <a
+                        className={`col-4 ${styles["movie"]}`}
+                        href="/movie-info"
+                    ></a>
+                </div>
+                <div className={`row ${styles["my-row"]}`}>
+                    <a
+                        className={`col-4 ${styles["movie"]}`}
+                        href="/movie-info"
+                    ></a>
+                    <a
+                        className={`col-4 ${styles["movie"]}`}
+                        href="/movie-info"
+                    ></a>
+                    <a
+                        className={`col-4 ${styles["movie"]}`}
+                        href="/movie-info"
+                    ></a>
                 </div>
             </div>
         </>

@@ -1,0 +1,22 @@
+.movie {
+    background-color: #aeb7b3;
+    transform: scale(0.9);
+}
+
+.my-row {
+    height: 250px;
+}
+
+.my-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-container {
+    text-align: center;
+}
+
+.my-btn {
+    background-color: #aeb7b3;
+}
