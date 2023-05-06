@@ -8,7 +8,7 @@ export default function Account() {
                 <div className={`col-6 ${styles["my-col-6"]}`}>
                     <img
                         id={styles["user-pfp"]}
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Checkerboard_pattern.svg/360px-Checkerboard_pattern.svg.png"
+                        src="https://cdn-icons-png.flaticon.com/512/64/64572.png"
                     />
                 </div>
                 <div className={`col-6 ${styles["my-col-6"]}`}>

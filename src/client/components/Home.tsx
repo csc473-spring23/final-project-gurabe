@@ -32,7 +32,7 @@ export default function Home() {
                     <a href="/account">
                         <img
                             id={`${styles["pfp"]}`}
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Checkerboard_pattern.svg/360px-Checkerboard_pattern.svg.png"
+                            src="https://cdn-icons-png.flaticon.com/512/64/64572.png"
                         />
                     </a>
                 </div>

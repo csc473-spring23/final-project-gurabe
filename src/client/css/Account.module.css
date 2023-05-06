@@ -13,6 +13,7 @@
 .my-row {
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
 .my-col-6 {
@@ -33,6 +34,8 @@
 
 #user-pfp {
     border-radius: 50%;
+    width: 100%;
+    transform: scale(0.8);
 }
 
 #username {
