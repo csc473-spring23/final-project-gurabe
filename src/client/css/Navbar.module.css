@@ -1,0 +1,28 @@
+.my-navbar {
+    height: fit-content;
+    background-color: #efcb68;
+}
+.my-navbar * {
+    max-height: 100px;
+}
+
+#home-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+
+.my-btn {
+    background-color: #aeb7b3;
+}
+
+#pfp {
+    border-radius: 50%;
+    height: 75px;
+    transform: scale(0.9);
+    transition: 0.25s;
+}
+#pfp:hover {
+    transform: scale(0.8);
+}
