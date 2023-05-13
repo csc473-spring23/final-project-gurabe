@@ -13,12 +13,19 @@ export default function Navbar() {
     return (
         <nav className={`navbar sticky-top ${styles["my-navbar"]}`}>
             <div className="container-fluid">
-                <a
-                    id={`${styles["home-link"]}`}
-                    href="/"
-                >
-                    CinemaShare
-                </a>
+                <div id={`${styles["logo-and-home-link"]}`}>
+                    <img
+                        src="/movie-frame.png"
+                        alt="logo"
+                        id={`${styles["logo"]}`}
+                    />
+                    <a
+                        id={`${styles["home-link"]}`}
+                        href="/"
+                    >
+                        CinemaShare
+                    </a>
+                </div>
 
                 <form
                     className="d-flex"

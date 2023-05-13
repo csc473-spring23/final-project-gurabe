@@ -6,11 +6,27 @@
     max-height: 100px;
 }
 
+#logo-and-home-link {
+    display: flex; /* Needed for center vertical alignment and for shrink on hover to still work */
+    align-items: center;
+}
+#logo-and-home-link > * {
+    margin: 5px;
+}
+
+#logo {
+    height: 50px;
+}
+
 #home-link {
     text-decoration: none;
     font-weight: bold;
     color: black;
     font-size: 25px;
+    transition: 0.25s;
+}
+#home-link:hover {
+    transform: scale(0.9);
 }
 
 .my-btn {
