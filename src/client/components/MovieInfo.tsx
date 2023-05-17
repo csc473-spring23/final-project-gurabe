@@ -1,6 +1,12 @@
 import styles from "../css/MovieInfo.module.css";
+import { useLocation } from 'react-router-dom';
 
-export default function MovieInfo() {
+export default function MovieInfo(item: any){
+
+    const location = useLocation();
+    const movie = location.state?.movie;
+    const genre= location.state?.genre;
+
     return (
         <>
             <div className={`row ${styles["my-row"]}`}>
@@ -11,8 +17,11 @@ export default function MovieInfo() {
                     >
                         Back
                     </a>
+                  
                 </div>
-                <div className={`col-4 ${styles["movie"]}`}></div>
+                    <div className={`col-4 ${styles["movie"]}`}>
+                        <img src={`https://image.tmdb.org/t/p/w500/${movie?.backdrop_path}`} alt={`${movie?.overview}`}/>
+                    </div>
                 <div className={`col-4 ${styles["my-col"]}`}>
                     <a
                         className={`btn ${styles["my-btn"]}`}
@@ -25,10 +34,10 @@ export default function MovieInfo() {
             </div>
 
             <div className={`container ${styles["my-container"]}`}>
-                <h1>Movie Title</h1>
-                <h2>Year {String.fromCharCode(183)} Genre</h2>
-                <p>Description</p>
+                <h1>{movie?.title}</h1>
+                <h2>{movie?.release_date} {String.fromCharCode(183)}{genre}</h2>
+                <p>{movie?.overview}</p>
             </div>
         </>
     );
-}
+};
