@@ -18,7 +18,7 @@ app.get("/hello", (_, res) => {
 const db= mysql2.createPool({
  user:'root',
  host:'localhost',
- password:'SqlGST123',
+ password:'',
  database:'login_system',
  waitForConnections: true,
  connectionLimit: 10,
