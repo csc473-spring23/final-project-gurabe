@@ -1,6 +1,7 @@
 import "./css/App.css";
 import { Route, Routes } from "react-router-dom"; // React tools for routing (multiple pages)
 
+
 import Home from "./components/Home";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
