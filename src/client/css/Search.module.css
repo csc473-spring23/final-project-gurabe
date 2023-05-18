@@ -1,3 +1,12 @@
 .my-container {
     margin-top: 15px;
 }
+
+.movie {
+    transform: scale(0.9);
+    transition: 0.25s;
+    overflow: hidden;
+}
+.movie:hover {
+    transform: scale(0.8);
+}

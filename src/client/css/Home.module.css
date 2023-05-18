@@ -2,14 +2,10 @@
     margin-top: 15px;
 }
 
-.my-row {
-    height: 250px;
-}
-
 .movie {
-    background-color: #aeb7b3;
     transform: scale(0.9);
     transition: 0.25s;
+    overflow: hidden;
 }
 .movie:hover {
     transform: scale(0.8);
