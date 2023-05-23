@@ -6,6 +6,8 @@ Contributors: [Sri Tarun Gulumuru](https://github.com/sritarung), [Dino Radoncic
 ## Description
 This web application serves as a platform for users to post and view movie content. All content will be available to all users by default. However, users will only be able to post their own content after creating an account for the application. For the sake of time, no actual movies will be posted to the application. Instead, this application will serve as a resource to view movie data (name, year, genre, etc.).
 
+Run Website Locally: `npm run dev`
+
 ## Project Structure
 ```
 final-project-gurabe/

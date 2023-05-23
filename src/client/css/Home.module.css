@@ -4,9 +4,38 @@
 
 .movie {
     transform: scale(0.9);
+    /* overflow: hidden; */
+    position: relative;
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+.movie img {
+    width: 100%;
+    display: block;
+    margin: auto;
     transition: 0.25s;
-    overflow: hidden;
 }
-.movie:hover {
+.movie-name {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    opacity: 0;
+    transition: 0.25s;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    word-break: break-all;
+    transform: scale(0.9);
+}
+
+.movie:hover img {
     transform: scale(0.8);
+    opacity: 0.5;
 }
+.movie:hover .movie-name {
+    opacity: 1;
+    transform: scale(2);
+}
+
+/* FIXME: Text wrap isn't working on the movie names for some reason */

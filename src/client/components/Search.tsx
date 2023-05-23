@@ -19,16 +19,22 @@ export default function Search() {
     const movieLinks = movies
         .filter((movie) => movie.backdrop_path != null) // Filter out movies with no image
         .map((movie, index) => (
-            <Link
-                key={index}
-                to={"/movie-info"}
-                state={{ movie }}
+            <div
                 className={`col-4 ${styles["movie"]}`}
+                key={index}
             >
-                <img
-                    src={`https://image.tmdb.org/t/p/w500/${movie?.backdrop_path}`}
-                />
-            </Link>
+                <Link
+                    to={"/movie-info"}
+                    state={{ movie }}
+                >
+                    <img
+                        src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}
+                    />
+                </Link>
+                <p className={`${styles["movie-name"]}`}>
+                    {movie.original_title}
+                </p>
+            </div>
         ));
 
     // Create a row of three movies
